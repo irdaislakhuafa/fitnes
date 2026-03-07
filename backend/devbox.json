@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": [
+    "nodejs@18",
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null",
+      "export PRISMA_ENGINE_BIN_DIR=\"$(dirname \"$(which query-engine)\")\"",
+      "export PRISMA_ENGINE_ROOT_DIR=\"$(dirname \"${PRISMA_ENGINE_BIN_DIR}\")\"",
+      "export PRISMA_QUERY_ENGINE_BINARY=\"${PRISMA_ENGINE_BIN_DIR}/query-engine\"",
+      "export PRISMA_SCHEMA_ENGINE_BINARY=\"${PRISMA_ENGINE_BIN_DIR}/schema-engine\"",
+      "export PRISMA_QUERY_ENGINE_LIBRARY=\"${PRISMA_ENGINE_ROOT_DIR}/lib/libquery_engine.node\"",
+      "export PRISMA_ENGINES_CHECKSUM_IGNORE_MISSING=1"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ],
+      "start": [
+        "npm run start"
+      ]
+    }
+  }
+}
