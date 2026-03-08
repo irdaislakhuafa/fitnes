@@ -1,0 +1,186 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-03-05T18:52:33Z",
+      "resolved": "github:NixOS/nixpkgs/917fec990948658ef1ccd07cef2a1ef060786846?lastModified=1772736753&narHash=sha256-au%2Fm3%2BEuBLoSzWUCb64a%2FMZq6QUtOV8oC0D9tY2scPQ%3D"
+    },
+    "nodejs@18": {
+      "last_modified": "2025-04-17T05:47:26Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/ebe4301cbd8f81c4f8d3244b3632338bbeb6d49c#nodejs_18",
+      "source": "devbox-search",
+      "version": "18.20.8",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/73cc4bwqdn6pm3jj33yj5r2kwd0l755g-nodejs-18.20.8",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/h4zmsb8h1lan5nfhsqllcjv8lh535m72-nodejs-18.20.8-dev"
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/pplb0ibvjw0wjb8690f2ldj9kx2ifhdx-nodejs-18.20.8-libv8"
+            }
+          ],
+          "store_path": "/nix/store/73cc4bwqdn6pm3jj33yj5r2kwd0l755g-nodejs-18.20.8"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fkdigjnf5xaa0xg0y95xzylmglyvkk0a-nodejs-18.20.8",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/22qpcyra5nbjhz5kfgb5ssnc0vvccvsy-nodejs-18.20.8-dev"
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/l2w31asaqkqxi83q5vafpgq3xrqgq455-nodejs-18.20.8-libv8"
+            }
+          ],
+          "store_path": "/nix/store/fkdigjnf5xaa0xg0y95xzylmglyvkk0a-nodejs-18.20.8"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ggvlfwnxvd0vynm8g572vnhia42nk347-nodejs-18.20.8",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/x86dr8x9xn0x2bxdk2231csaaxjh4lb3-nodejs-18.20.8-libv8"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/0b7c4rbb38m6g9q0vcfczx3kbm3z7fns-nodejs-18.20.8-dev"
+            }
+          ],
+          "store_path": "/nix/store/ggvlfwnxvd0vynm8g572vnhia42nk347-nodejs-18.20.8"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0110yhlgniwfpy4iarjgnfqcvn6zhs37-nodejs-18.20.8",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/djyml6gzfhz511amx5d2mqy50p9hd2gz-nodejs-18.20.8-libv8"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/9h65bm05d96j55ifsbb8w14r6f05c7kr-nodejs-18.20.8-dev"
+            }
+          ],
+          "store_path": "/nix/store/0110yhlgniwfpy4iarjgnfqcvn6zhs37-nodejs-18.20.8"
+        }
+      }
+    },
+    "prisma-engines@5": {
+      "last_modified": "2024-12-03T12:40:06Z",
+      "resolved": "github:NixOS/nixpkgs/566e53c2ad750c84f6d31f9ccb9d00f823165550#prisma-engines",
+      "source": "devbox-search",
+      "version": "5.22.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3m7pm3hxg3xv99nlaji7qf2g34w888i4-prisma-engines-5.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3m7pm3hxg3xv99nlaji7qf2g34w888i4-prisma-engines-5.22.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7295h48dwib7dw22bsmk5rjzai4rfb83-prisma-engines-5.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7295h48dwib7dw22bsmk5rjzai4rfb83-prisma-engines-5.22.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/16ny4cfbrbks7crr73z8ka73iisji2sp-prisma-engines-5.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/16ny4cfbrbks7crr73z8ka73iisji2sp-prisma-engines-5.22.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ap24x1wgnwalkqz5crhmqah9xq37rq47-prisma-engines-5.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ap24x1wgnwalkqz5crhmqah9xq37rq47-prisma-engines-5.22.0"
+        }
+      }
+    },
+    "prisma@5": {
+      "last_modified": "2024-12-03T12:40:06Z",
+      "resolved": "github:NixOS/nixpkgs/566e53c2ad750c84f6d31f9ccb9d00f823165550#prisma",
+      "source": "devbox-search",
+      "version": "5.22.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m8lx04c7plnfk1gh5hrvz1qgcv5wikzr-prisma-5.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/m8lx04c7plnfk1gh5hrvz1qgcv5wikzr-prisma-5.22.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fxd6pnwbfzqhp2jvh51h692awgqh2j81-prisma-5.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fxd6pnwbfzqhp2jvh51h692awgqh2j81-prisma-5.22.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gc4kpas299sq1k9yhrlm4znhdfm87f1s-prisma-5.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gc4kpas299sq1k9yhrlm4znhdfm87f1s-prisma-5.22.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/g1pi3rxq39csmrwy34vbn7cmws3nkzmk-prisma-5.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/g1pi3rxq39csmrwy34vbn7cmws3nkzmk-prisma-5.22.0"
+        }
+      }
+    }
+  }
+}
