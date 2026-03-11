@@ -7,7 +7,7 @@ RUN npm ci
 
 COPY . .
 
-ARG VITE_API_URL=http://localhost:5002/api
+ARG VITE_API_URL=https://fitness-be.puskesmasbugangan.my.id/api
 ENV VITE_API_URL=${VITE_API_URL}
 
 RUN npm run build
