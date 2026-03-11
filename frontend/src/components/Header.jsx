@@ -6,10 +6,10 @@ export default function Header() {
         <header className="header">
             <div className="container header-content">
                 <Link to="/" className="logo">
-                    <img src="/pevita.png" alt="PEVITA Logo" className="logo-icon" style={{ height: '32px', width: 'auto' }} />
+                    <img src="/pevita.png" alt="PEVITA Logo" className="logo-icon" style={{ height: '48px', width: 'auto' }} />
                     <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2 }}>
                         <span>PEVITA</span>
-                        <span style={{ fontSize: '0.6rem', opacity: 0.8, fontWeight: 400 }}>Puskesmas Bugangan</span>
+                        {/* <span style={{ fontSize: '0.6rem', opacity: 0.8, fontWeight: 400 }}>Puskesmas Bugangan</span> */}
                     </div>
                 </Link>
                 <div className="header-buttons">

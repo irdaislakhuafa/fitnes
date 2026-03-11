@@ -16,7 +16,7 @@ export default function ClientLayout() {
             <aside className="sidebar">
                 <div className="sidebar-header">
                     <div className="logo">
-                        <img src="/pevita.png" alt="PEVITA Logo" className="logo-icon" style={{ height: '28px', width: 'auto' }} />
+                        <img src="/pevita.png" alt="PEVITA Logo" className="logo-icon" style={{ height: '40px', width: 'auto' }} />
                         <span>PEVITA</span>
                     </div>
                 </div>
