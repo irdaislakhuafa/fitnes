@@ -16,7 +16,7 @@ export default function CoachLayout() {
             <aside className="sidebar">
                 <div className="sidebar-header">
                     <div className="logo">
-                        <Activity className="logo-icon" size={28} />
+                        <img src="/pevita.png" alt="PEVITA Logo" className="logo-icon" style={{ height: '40px', width: 'auto' }} />
                         <span>PEVITA</span>
                     </div>
                 </div>
