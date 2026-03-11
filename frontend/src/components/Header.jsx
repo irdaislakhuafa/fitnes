@@ -6,7 +6,7 @@ export default function Header() {
         <header className="header">
             <div className="container header-content">
                 <Link to="/" className="logo">
-                    <Activity className="logo-icon" size={32} />
+                    <img src="/pevita.png" alt="PEVITA Logo" className="logo-icon" style={{ height: '32px', width: 'auto' }} />
                     <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2 }}>
                         <span>PEVITA</span>
                         <span style={{ fontSize: '0.6rem', opacity: 0.8, fontWeight: 400 }}>Puskesmas Bugangan</span>
@@ -14,7 +14,7 @@ export default function Header() {
                 </Link>
                 <div className="header-buttons">
                     <a
-                        href="https://wa.me/6281234567890"
+                        href="https://wa.me/6285848374158"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-outline"

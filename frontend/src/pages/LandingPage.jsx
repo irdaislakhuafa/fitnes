@@ -201,7 +201,7 @@ export default function LandingPage() {
                     <p>Bergabunglah dengan ribuan member yang telah merasakan manfaat dari program kami</p>
                     <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a
-                            href="https://wa.me/6281234567890"
+                            href="https://wa.me/6285848374158"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-success"
