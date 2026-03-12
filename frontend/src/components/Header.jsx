@@ -20,7 +20,7 @@ export default function Header() {
                         className="btn btn-outline"
                     >
                         <Phone size={18} />
-                        Hubungi Admin
+                        <span className="btn-text-hide">Hubungi Admin</span>
                     </a>
                     <Link to="/login" className="btn btn-primary">
                         Masuk

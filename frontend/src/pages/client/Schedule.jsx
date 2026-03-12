@@ -578,8 +578,9 @@ export default function ClientSchedule() {
                 toast.show && (
                     <div style={{
                         position: 'fixed',
-                        top: '2rem',
-                        right: '2rem',
+                        top: '1rem',
+                        left: '1rem',
+                        right: '1rem',
                         background: toast.type === 'success'
                             ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)'
                             : 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
@@ -588,8 +589,8 @@ export default function ClientSchedule() {
                         borderRadius: '0.75rem',
                         boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
                         zIndex: 9999,
-                        minWidth: '300px',
                         maxWidth: '500px',
+                        margin: '0 auto',
                         animation: 'slideIn 0.3s ease-out',
                         display: 'flex',
                         alignItems: 'center',
