@@ -481,6 +481,7 @@ input, select {
   top: 0;
   left: 0;
   bottom: 0;
+  transition: transform 0.3s ease;
 }
 
 .sidebar-header {
@@ -800,22 +801,192 @@ input, select {
   margin-bottom: 1rem;
 }
 
+/* ============ HAMBURGER / MOBILE TOPBAR ============ */
+.mobile-topbar {
+  display: none;
+}
+
+/* Hide button text on mobile */
+.btn-text-hide {
+  display: inline;
+}
+
+.hamburger-btn {
+  width: 40px;
+  height: 40px;
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.hamburger-btn:hover {
+  background: rgba(124, 58, 237, 0.3);
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 150;
+  backdrop-filter: blur(2px);
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
+  /* Sidebar */
   .sidebar {
     transform: translateX(-100%);
+    z-index: 200;
+    transition: transform 0.3s ease;
   }
-  
+
+  .sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    display: block;
+  }
+
+  /* Admin content */
   .admin-content {
     margin-left: 0;
+    padding: 1rem;
+    padding-top: 4.5rem; /* space for mobile topbar */
   }
-  
+
+  /* Mobile topbar */
+  .mobile-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    background: rgba(2, 6, 23, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    height: 56px;
+  }
+
+  /* Landing */
   .landing-hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  
+
+  .landing-hero p {
+    font-size: 1rem;
+  }
+
+  .landing-hero {
+    padding: 2.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
   .imt-grid,
   .features-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Header */
+  .btn-text-hide {
+    display: none; /* Hide button text, keep icon */
+  }
+
+  /* Page header */
+  .page-header {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .page-title {
+    font-size: 1.35rem;
+  }
+
+  /* Stats grid */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Data table - scroll horizontally */
+  .data-card {
+    overflow-x: auto;
+  }
+
+  .data-table {
+    min-width: 500px;
+  }
+
+  /* Modal */
+  .modal-overlay {
+    padding: 0.75rem;
+    align-items: flex-end;
+  }
+
+  .modal {
+    max-height: 95vh;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  /* Login card */
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+
+  /* CTA */
+  .cta-box {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cta-box h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Toast notification - full width on mobile */
+  /* (handled via inline style override in Schedule.jsx below) */
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .landing-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.1rem;
+    font-size: 0.82rem;
+  }
+
+  .stat-card {
+    padding: 1rem;
+  }
+
+  .stat-info h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Calendar cells - smaller on tiny screens */
+  .admin-content {
+    padding: 0.75rem;
+    padding-top: 4.5rem;
   }
 }
