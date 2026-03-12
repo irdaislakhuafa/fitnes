@@ -241,7 +241,7 @@ export default function ClientDetail() {
                                 }}>
                                     {proof.imageUrl && (
                                         <img
-                                            src={`http://localhost:5002${proof.imageUrl}`}
+                                            src={`${API_URL.replace('/api', '')}${proof.imageUrl}`}
                                             alt="Bukti latihan"
                                             style={{
                                                 width: '100%',
